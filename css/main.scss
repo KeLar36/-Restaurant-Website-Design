@@ -586,24 +586,24 @@ col-2 {
 }
 
 .price::before {
-	content: "---------------------------------------";
+	content: "-------------------------------";
 }
 
 @media screen and (max-width:1725px) {
 	.price::before {
-		content: "-------------------------";
+		content: "------------------";
 	}
 }
 
 @media screen and (max-width:1500px) {
 	.price::before {
-		content: "----------------------- ";
+		content: "------------- ";
 	}
 }
 
 @media screen and (max-width:1300px) {
 	.price::before {
-		content: "---------------- ";
+		content: "-------- ";
 	}
 }
 
@@ -650,7 +650,8 @@ col-2 {
 		width: 310px;
 		max-width: 310px;
 	}
-	.menu-title{
+
+	.menu-title {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -678,7 +679,8 @@ col-2 {
 		display: block;
 		margin-top: 10px;
 	}
-	.menu{
+
+	.menu {
 		margin-left: 0;
 	}
 }
