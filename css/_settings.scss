@@ -6,12 +6,12 @@ $font-secondary: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Seg
 
 // Font width
 $fw: (
-  thin: 100,
-  light: 300,
-  regular: 400,
-  medium: 500,
-  bold: 700,
-  black: 800
+	thin: 100,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	bold: 700,
+	black: 800
 );
 
 //Font sizes
@@ -48,12 +48,12 @@ $breakpoint-xxl: 1400px;
 
 
 //COLORS
-$color1:#FF7400;
-$color2:#D67E34;
-$color3:#BC9060;
-$color4:#656363;
-$color5:#000000;
-$color6:#FFFFFF;
+$color1: #FF7400;
+$color2: #D67E34;
+$color3: #BC9060;
+$color4: #656363;
+$color5: #000000;
+$color6: #FFFFFF;
 
 @mixin make-heading($desktop, $tablet, $mobile, $line-height, $font-weight: 700) {
 	margin-top: 0;
@@ -62,35 +62,48 @@ $color6:#FFFFFF;
 	font-weight: #{$font-weight};
 	font-size: #{$mobile};
 	line-height: #{$line-height};
-	 @media (min-width: $breakpoint-md) {
-		 font-size: #{$tablet};
-	 }
-	@media (min-width: $breakpoint-xl) {
-	  font-size: #{$desktop};
+
+	@media (min-width: $breakpoint-md) {
+		font-size: #{$tablet};
 	}
- }
- 
- h1, .h1 {
+
+	@media (min-width: $breakpoint-xl) {
+		font-size: #{$desktop};
+	}
+}
+
+h1,
+.h1 {
 	@include make-heading($fs-xxxl, $fs-xxxl, $fs-xxxl, $lh-base, map-get($fw, bold));
- }
- h2, .h2 {
+}
+
+h2,
+.h2 {
 	@include make-heading($fs-xxl, $fs-xxl, $fs-xxl, $lh-base, map-get($fw, bold));
- }
- h3, .h3 {
+}
+
+h3,
+.h3 {
 	@include make-heading($fs-xxl, $fs-xl, $fs-xl, $lh-base, map-get($fw, bold));
- }
- h4, .h4 {
+}
+
+h4,
+.h4 {
 	@include make-heading($fs-l, $fs-m, $fs-base-desktop, $lh-base, map-get($fw, bold));
- }
- h5, .h5 {
+}
+
+h5,
+.h5 {
 	@include make-heading($fs-m, $fs-m, $fs-base, $lh-base, map-get($fw, bold));
- }
- h6, .h6 {
+}
+
+h6,
+.h6 {
 	@include make-heading($fs-base, $fs-base, $fs-base, $lh-base, map-get($fw, bold));
- }
- 
- p {
+}
+
+p {
 	font-size: $fs-base-desktop;
 	margin-top: 0;
 	margin-bottom: 0rem;
- }
+}
