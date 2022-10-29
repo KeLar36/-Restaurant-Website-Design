@@ -472,7 +472,7 @@ col-2 {
   .Title h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 5px;
+    margin: 5px 0px;
     line-height: normal;
   }
   .Title h2 {
