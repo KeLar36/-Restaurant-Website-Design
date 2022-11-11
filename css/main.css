@@ -454,6 +454,11 @@ col-2 {
   margin-top: 15px;
 }
 
+.icon {
+  width: 126px;
+  height: 104px;
+}
+
 @media screen and (max-width: 768px) {
   .Title h4 {
     font-size: 15px;
@@ -492,7 +497,7 @@ col-2 {
 .card {
   display: block;
   width: 350px;
-  height: 380px;
+  height: 320px;
   text-align: center;
   margin-top: -100px;
   background-color: #FFFFFF;
@@ -503,6 +508,9 @@ col-2 {
 }
 .card:hover {
   transform: scale(1.25);
+}
+.card.text {
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -544,7 +552,8 @@ col-2 {
   color: #656363;
   width: 95%;
   font-size: 26px;
-  margin-top: 15px;
+  margin: 15px 0;
+  line-height: normal;
 }
 
 @media screen and (max-width: 500px) {

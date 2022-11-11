@@ -145,6 +145,10 @@ col-2 {
 .Title .button {
 	margin-top: 15px;
 }
+.icon{
+	width: 126px;
+	height: 104px;
+}
 
 @media screen and (max-width:768px) {
 	.Title h4 {
@@ -190,7 +194,7 @@ col-2 {
 .card {
 	display: block;
 	width: 350px;
-	height: 380px;
+	height: 320px;
 	text-align: center;
 	margin-top: -100px;
 	background-color: $color6;
@@ -201,6 +205,9 @@ col-2 {
 
 	&:hover {
 		transform: scale(1.25);
+	}
+	&.text{
+		padding-bottom: 10px;
 	}
 }
 
@@ -247,7 +254,8 @@ col-2 {
 	color: $color4;
 	width: 95%;
 	font-size: 26px;
-	margin-top: 15px;
+	margin: 15px 0;
+	line-height: normal;
 }
 
 @media screen and (max-width:500px) {
